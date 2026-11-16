@@ -1,0 +1,298 @@
+.login-halaman {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8fafc;
+}
+
+@supports (min-height: 100dvh) {
+    .login-halaman {
+        min-height: 100dvh;
+    }
+}
+
+.login-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.25rem 1.5rem;
+    color: #ffffff;
+    background-color: #0f172a;
+}
+
+.login-merek {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.login-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.login-nama {
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+}
+
+.login-singkatan {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+.login-pesan {
+    display: none;
+}
+
+.login-rak {
+    display: none;
+}
+
+.login-form-area {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1rem;
+}
+
+.login-kartu {
+    width: 100%;
+    max-width: 26rem;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+}
+
+.login-kartu h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.login-pengantar {
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.login-label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.login-input-wadah {
+    position: relative;
+}
+
+.login-input-ikon {
+    position: absolute;
+    top: 50%;
+    left: 0.85rem;
+    color: #94a3b8;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.login-input {
+    width: 100%;
+    padding: 0.65rem 2.9rem 0.65rem 2.6rem;
+    font-size: 0.9rem;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #0f172a;
+    box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.15);
+}
+
+.login-toggle {
+    position: absolute;
+    top: 50%;
+    right: 0.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #64748b;
+    background-color: transparent;
+    border: 0;
+    border-radius: 0.5rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.login-tombol {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0f172a;
+    border: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.login-tombol:hover {
+    background-color: #1e293b;
+}
+
+.login-info {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    font-size: 0.78rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+}
+
+.login-footer {
+    margin-top: 1.25rem;
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .login-halaman {
+        flex-direction: row;
+    }
+
+    .login-hero {
+        flex: 0 0 46%;
+        padding: 2.5rem 3rem;
+    }
+
+    .login-logo {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .login-pesan {
+        display: block;
+        max-width: 28rem;
+    }
+
+    .login-pesan h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    .login-sekolah {
+        margin-top: 0.75rem;
+        font-size: 0.9rem;
+        color: #94a3b8;
+    }
+
+    .login-aturan {
+        margin-top: 2rem;
+        border-top: 1px solid #334155;
+    }
+
+    .login-aturan div {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.75rem 0;
+        font-size: 0.875rem;
+        border-bottom: 1px solid #334155;
+    }
+
+    .login-aturan dt {
+        color: #94a3b8;
+    }
+
+    .login-aturan dd {
+        font-weight: 600;
+        text-align: right;
+    }
+
+    .login-rak {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+        height: 7rem;
+        padding-bottom: 0;
+        border-bottom: 4px solid #334155;
+    }
+
+    .login-rak span {
+        display: block;
+        width: 1.1rem;
+        border-radius: 2px 2px 0 0;
+        background-color: #334155;
+    }
+
+    .login-rak span:nth-child(1) {
+        height: 78%;
+    }
+    .login-rak span:nth-child(2) {
+        height: 92%;
+        width: 1.5rem;
+        background-color: #475569;
+    }
+    .login-rak span:nth-child(3) {
+        height: 66%;
+        width: 0.9rem;
+    }
+    .login-rak span:nth-child(4) {
+        height: 85%;
+        background-color: #64748b;
+    }
+    .login-rak span:nth-child(5) {
+        height: 100%;
+        width: 1.3rem;
+    }
+    .login-rak span:nth-child(6) {
+        height: 72%;
+        width: 0.8rem;
+        background-color: #475569;
+    }
+    .login-rak span:nth-child(7) {
+        height: 88%;
+    }
+    .login-rak span:nth-child(8) {
+        height: 60%;
+        width: 1.4rem;
+        background-color: #64748b;
+    }
+    .login-rak span:nth-child(9) {
+        height: 95%;
+        width: 0.9rem;
+    }
+    .login-rak span:nth-child(10) {
+        height: 74%;
+        background-color: #475569;
+    }
+    .login-rak span:nth-child(11) {
+        height: 82%;
+        width: 1.2rem;
+    }
+
+    .login-form-area {
+        padding: 3rem 2rem 1.5rem;
+    }
+
+    .login-kartu {
+        padding: 2.25rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .login-hero {
+        padding: 3rem 4rem;
+    }
+}
